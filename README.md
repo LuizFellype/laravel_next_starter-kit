@@ -1,3 +1,61 @@
+# Laravel + Next Template
+
+## Introduction
+
+This repository is an implementation of the [Laravel Breeze](https://laravel.com/docs/starter-kits) application / authentication starter kit frontend in [Next.js](https://nextjs.org). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful Next.js frontend with a powerful Laravel backend.
+
+### Installation
+
+Clone the project, configure env:
+
+
+Ensure that your application's `APP_URL` and `FRONTEND_URL` environment variables are set to `http://localhost:8000` and `http://localhost:3000`, respectively.
+
+
+Terminal 1
+```bash
+# Install Breeze and dependencies...
+composer require laravel/breeze --dev
+
+php artisan breeze:install api
+
+# Run database migrations...
+php artisan migrate
+
+# Serve the application...
+php artisan serve
+```
+
+Terminal 2
+
+```bash
+cd breeze-next
+
+npm install
+
+npm run dev
+```
+
+`pwa-starter-kit` is in on starter point without the auth pages, so it is in progress, but you can run the same way but with `pnpm` instead of `npm`.
+
+It is preferable because it is already included:
+- TS
+- Testing environmennt
+- Theme
+- PWA setup
+
+```
+NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
+```
+
+The Backend will be available at `http://localhost:8000`. 
+The Frontend will be available at `http://localhost:3000`.
+
+> Note: Currently, we recommend using `localhost` during local development of your backend and frontend to avoid CORS "Same-Origin" issues.
+
+--------
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
