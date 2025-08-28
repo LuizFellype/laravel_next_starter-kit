@@ -36,7 +36,7 @@ npm install
 npm run dev
 ```
 
-`pwa-starter-kit` is in on starter point without the auth pages, so it is in progress, but you can run the same way but with `pnpm` instead of `npm`.
+`pwa-starter` is a boilerplate without the auth pages, so it is in progress. You can run the same way but with `pnpm` instead of `npm`.
 
 It is preferable because it is already included:
 - TS
